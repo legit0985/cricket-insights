@@ -2,6 +2,13 @@
 
 Ads ke liye simple landing page jo users ko Telegram channel par bhejta hai.
 
+## Live links (ads mein yahi lagao)
+
+- **Vercel:** https://cricket-insights.vercel.app
+- **GitHub Pages (backup):** https://legit0985.github.io/cricket-insights/
+
+Dono hamesha online rehte hain, kuch run karne ki zarurat nahi.
+
 ## Localhost par chalao
 
 ```bash
