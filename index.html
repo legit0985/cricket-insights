@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cricket Insights | Free Telegram Channel</title>
+<meta name="description" content="Daily cricket match analysis, team insights and updates. Join our free Telegram channel.">
+
+<!-- Meta Pixel: apna Pixel ID neeche PIXEL_ID ki jagah daalo -->
+<script>
+var PIXEL_ID = ""; // e.g. "1234567890123456"
+if (PIXEL_ID) {
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', PIXEL_ID);
+  fbq('track', 'PageView');
+}
+</script>
+
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", system-ui, -apple-system, sans-serif; }
+
+body {
+  min-height: 100vh;
+  color: #fff;
+  background:
+    radial-gradient(circle at 20% 10%, rgba(31,162,255,.25), transparent 45%),
+    radial-gradient(circle at 85% 80%, rgba(18,216,250,.18), transparent 45%),
+    linear-gradient(160deg, #0a1f14 0%, #0c0f1a 55%, #070912 100%);
+  background-attachment: fixed;
+}
+
+.container {
+  max-width: 480px;
+  margin: auto;
+  padding: 24px 16px 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Header */
+.profile { text-align: center; }
+.logo {
+  width: 105px; height: 105px; margin: 0 auto 12px;
+  border-radius: 50%;
+  border: 2px solid rgba(255,255,255,.6);
+  box-shadow: 0 8px 25px rgba(0,0,0,.4);
+  background: linear-gradient(135deg, #1fa2ff, #0a7d4f);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 48px; overflow: hidden;
+}
+.logo img { width: 100%; height: 100%; object-fit: cover; }
+.profile h1 { font-size: 1.6rem; font-weight: 700; letter-spacing: .5px; }
+.badge {
+  display: inline-flex; align-items: center; gap: 6px;
+  margin-top: 8px; padding: 4px 12px;
+  font-size: .8rem; border-radius: 20px;
+  background: rgba(76,175,80,.15); border: 1px solid rgba(76,175,80,.5); color: #8be28f;
+}
+.dot { width: 8px; height: 8px; border-radius: 50%; background: #4caf50; animation: pulse 1.5s infinite; }
+@keyframes pulse { 0%,100% { opacity: 1; } 50% { opacity: .3; } }
+
+/* Cards */
+.card {
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.18);
+  border-radius: 14px;
+  padding: 18px 16px;
+  text-align: center;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+.card h2 { font-size: 1.25rem; margin-bottom: 10px; }
+.info { font-size: .92rem; opacity: .9; line-height: 1.5; }
+
+.features { list-style: none; display: grid; gap: 8px; text-align: left; max-width: 280px; margin: 0 auto; }
+.features li { font-size: .95rem; }
+.features li::before { content: "✓"; color: #4caf50; font-weight: 700; margin-right: 8px; }
+
+.stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
+.stat b { display: block; font-size: 1.2rem; color: #12d8fa; }
+.stat span { font-size: .75rem; opacity: .8; }
+
+/* Buttons with shine */
+.btn, .nav-btn {
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  color: #fff; text-decoration: none; font-weight: 700;
+  background: linear-gradient(135deg, #1fa2ff, #12d8fa, #1fa2ff);
+  border-radius: 30px;
+  box-shadow: 0 8px 20px rgba(0,0,0,.35);
+  position: relative; overflow: hidden;
+  transition: transform .25s ease;
+}
+.btn { margin-top: 14px; padding: 14px; }
+.btn:hover, .nav-btn:hover { transform: translateY(-2px); }
+.btn::before, .nav-btn::before {
+  content: ""; position: absolute; top: 0; left: -100px;
+  width: 100px; height: 100%;
+  background-image: linear-gradient(120deg, rgba(255,255,255,0) 30%, rgba(255,255,255,.8), rgba(255,255,255,0) 70%);
+  animation: shine 3s infinite linear;
+}
+@keyframes shine { 0% { left: -100px; } 20% { left: 100%; } 100% { left: 100%; } }
+.tg-icon { width: 22px; height: 22px; flex-shrink: 0; }
+
+/* Disclaimer + footer */
+.disclaimer { font-size: .75rem; opacity: .65; line-height: 1.5; text-align: center; }
+.footer { text-align: center; font-size: .85rem; opacity: .85; }
+
+/* Curved bottom bar */
+.curved-nav {
+  position: fixed; bottom: 0; left: 0; width: 100%; height: 64px;
+  background: rgba(0,0,0,.6);
+  backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  z-index: 10;
+  display: flex; justify-content: center; align-items: center;
+  padding-bottom: 10px;
+}
+.curved-nav::before {
+  content: ""; position: absolute; top: -30px; left: 0; width: 100%; height: 60px;
+  background: rgba(0,0,0,.6); border-radius: 50% 50% 0 0; z-index: -1;
+}
+.nav-btn { width: 270px; max-width: calc(100% - 32px); height: 50px; font-size: 1rem; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- Header: logo aur naam yahan badlo -->
+  <div class="profile">
+    <div class="logo">🏏</div>
+    <!-- Apna logo lagana ho toh upar wali line hata ke yeh use karo:
+         <div class="logo"><img src="logo.jpg" alt="Logo"></div> -->
+    <h1>CRICKET INSIGHTS</h1>
+    <div class="badge"><span class="dot"></span> Daily Live Updates</div>
+  </div>
+
+  <!-- Main CTA -->
+  <div class="card">
+    <h2>Cricket Match Analysis</h2>
+    <p class="info">Well researched match insights, pitch reports &amp; team analysis — free on Telegram.</p>
+    <a href="https://t.me/+lIiPpnnafpY4Yjdl" class="btn tg-link" target="_blank" rel="noopener">
+      <svg class="tg-icon" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+      Join Free Telegram Channel
+    </a>
+  </div>
+
+  <!-- Features -->
+  <div class="card">
+    <h2>What You Get</h2>
+    <ul class="features">
+      <li>Match &amp; Toss Analysis</li>
+      <li>Pitch &amp; Weather Reports</li>
+      <li>Team Performance Insights</li>
+      <li>Daily Free Updates</li>
+    </ul>
+  </div>
+
+  <!-- Stats -->
+  <div class="card">
+    <div class="stats">
+      <div class="stat"><b>Daily</b><span>Updates</span></div>
+      <div class="stat"><b>100%</b><span>Free</span></div>
+      <div class="stat"><b>24/7</b><span>Active</span></div>
+    </div>
+    <p class="info" style="margin-top:12px">Join cricket fans who follow our daily match analysis.</p>
+  </div>
+
+  <p class="disclaimer">
+    Disclaimer: This channel shares cricket analysis and opinions for information and entertainment only.
+    We do not promote or support betting or gambling of any kind. 18+ only.
+  </p>
+
+  <div class="footer">© <span id="year"></span> Cricket Insights</div>
+</div>
+
+<!-- Fixed bottom button -->
+<div class="curved-nav">
+  <a href="https://t.me/+lIiPpnnafpY4Yjdl" class="nav-btn tg-link" target="_blank" rel="noopener">
+    <svg class="tg-icon" viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M9.78 18.65l.28-4.23 7.68-6.92c.34-.31-.07-.46-.52-.19L7.74 13.3 3.64 12c-.88-.25-.89-.86.2-1.3l15.97-6.16c.73-.33 1.43.18 1.15 1.3l-2.72 12.81c-.19.91-.74 1.13-1.5.71L12.6 16.3l-1.99 1.93c-.23.23-.42.42-.83.42z"/></svg>
+    अभी टेलीग्राम जॉइन करें
+  </a>
+</div>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+// Button click par Meta Pixel "Lead" event (ads optimisation ke liye)
+document.querySelectorAll(".tg-link").forEach(function (a) {
+  a.addEventListener("click", function () {
+    if (window.fbq) fbq("track", "Lead");
+  });
+});
+</script>
+
+</body>
+</html>
