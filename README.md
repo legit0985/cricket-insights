@@ -9,6 +9,15 @@ Ads ke liye simple landing page jo users ko Telegram channel par bhejta hai.
 
 Dono hamesha online rehte hain, kuch run karne ki zarurat nahi.
 
+## Page badalne ke baad
+
+- **GitHub Pages:** `git push` karte hi 1-2 minute mein apne aap update.
+- **Vercel:** apne aap update nahi hota. Push ke baad yeh chalao:
+
+```bash
+vercel deploy --prod
+```
+
 ## Localhost par chalao
 
 ```bash
