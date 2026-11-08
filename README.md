@@ -29,8 +29,8 @@ Phir browser mein kholo: http://localhost:8080
 ## Kya badalna hai (sab `index.html` mein)
 
 - **Telegram link**: `https://t.me/+lIiPpnnafpY4Yjdl` (2 jagah hai)
-- **Naam**: `CRICKET INSIGHTS`
-- **Logo**: `logo.jpg` folder mein daalo aur `index.html` mein comment wali line use karo
+- **Naam**: `JOGINDER BHAI`
+- **Logo**: `logo.svg`
 - **Meta Pixel**: upar `var PIXEL_ID = "";` mein apna Pixel ID daalo. Button click par `Lead` event jata hai.
 
 ## Live karna (GitHub Pages)
